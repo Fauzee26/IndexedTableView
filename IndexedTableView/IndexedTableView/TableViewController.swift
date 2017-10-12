@@ -59,6 +59,12 @@ class TableViewController: UITableViewController {
         return cell
     }
     
+    //menambahkan index number pada tableview
+    override func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+        
+        return indexOfNumbers
+    }
+    
     override func tableView(_ tableView: UITableView, sectionForSectionIndexTitle title: String, at index: Int) -> Int {
         
         //deklarasi var temp sebagai penyimpanan data dari indexofnumber
